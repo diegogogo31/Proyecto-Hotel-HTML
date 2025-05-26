@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Times+New+Roman&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: beige;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+/* NAVBAR */
+header.navbar {
+  background-color: #948c67;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: calc(100% - 17px); 
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  overflow-x: hidden;
+}
+
+.logo {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #ddd;
+}
+
+
+main {
+  flex: 1;
+  margin-top: 100px;
+  margin-bottom: 60px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* FORMULARIO */
+.formulario {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.formulario h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #0097a7;
+}
+
+/* FOOTER */
+footer {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+ 
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: nowrap; /* evita que se bajen las columnas */
+  justify-content: space-between;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 30px 50px;
+  max-width: 1300px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-logo {
+  width: 180px;
+  margin-bottom: 20px;
+}
+
+.footer-column h3 {
+  font-size: 1.1rem;
+  color: #b19b68;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.footer-column p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* COPYRIGHT */
+.footer-copy {
+  background-color: #948c67;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .footer-content {
+    flex-wrap: wrap; /* en pantallas pequeñas, ya se permite */
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .footer-column {
+    min-width: 220px;
+    margin-bottom: 20px;
+  }
+}
+
